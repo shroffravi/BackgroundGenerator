@@ -1,2 +1,4 @@
 # BackgroundGenerator
-https://github.com/shroffravi/BackgroundGenerator/
+Generates a colorful background page
+
+https://shroffravi.github.io/BackgroundGenerator/
