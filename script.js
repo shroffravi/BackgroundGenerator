@@ -35,12 +35,19 @@ function setGradient()
 	css.textContent = body.style.background + ";";
 }
 
-/*css.textContent = body.style.background 
-+ "Color 1: "
-+ hexToRGB(color1.value) 
-+ "  " 
-+ "Color 2: "
-+ hexToRGB(color2.value) + ";";*/
+function get_rand_color()
+{
+    var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
+    while(color.length < 6) {
+        color = "0" + color;
+    }
+    return "#" + color;
+}
+
+
+color1.setAttribute('value', get_rand_color());
+color2.setAttribute('value', get_rand_color());
+
 
 setGradient()
 
